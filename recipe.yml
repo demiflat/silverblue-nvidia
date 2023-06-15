@@ -49,7 +49,6 @@ rpms:
   - gh
   - gitk
   - gnumeric
-  # - gstreamer1-plugin-openh264
   - gstreamer1-plugins-base-tools
   - gstreamer1-plugins-entrans
   - gstreamer1-plugins-fc
@@ -75,6 +74,7 @@ rpms:
   - libvdpau-va-gl  
   - libvirt-client
   - libvirt-daemon-kvm
+  - lolcat
   - lua
   - luajit
   - minicom
@@ -83,7 +83,6 @@ rpms:
   - neovim
   # - net-tools
   - nmap
-  # - openh264
   - p7zip
   - pass
   - pip
@@ -118,15 +117,13 @@ rpms:
 # this is just an example selection.
 # If you leave this empty you can use yafti for post-boot installation
 flatpaks:
-  - org.freedesktop.Platform.ffmpeg-full
+  - runtime/org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
   - org.mozilla.firefox
   # - org.mozilla.Thunderbird
   - com.mattjakeman.ExtensionManager
-  # - org.libreoffice.LibreOffice
   - org.gnome.DejaDup
   - org.gustavoperedo.FontDownloader
   - com.github.tchx84.Flatseal
   - io.github.celluloid_player.Celluloid
   - org.videolan.VLC
-  - io.mpv.Mpv
   - us.zoom.Zoom
