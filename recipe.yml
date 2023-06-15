@@ -85,8 +85,10 @@ rpms:
   - nmap
   - p7zip
   - pass
+  - perf
   - pip
   - plotnetcfg
+  - powertop
   - progress
   - pv
   - pwgen
@@ -99,6 +101,7 @@ rpms:
   - strace
   - task
   - terminator
+  - tlp
   - tmux
   - transmission
   - vdpauinfo
