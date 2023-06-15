@@ -32,14 +32,17 @@ extrarepos:
 # These rpms will be installed from the fedora repository
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
+  - aria2
   - chromium
   - clang
   - emacs
   - et
+  - dmenu
   - figlet
   - fish
   - foliate
   - fortune-mod
+  - fzf
   - gedit
   - gh
   - gitk
@@ -56,8 +59,11 @@ rpms:
   - gstreamer1-svt-vp9
   - gstreamer1-vaapi  
   - gron
+  - helvum
   - hdparm
+  - htop
   - iotop-c
+  - iperf3
   - jq
   - libreoffice
   - librewolf
@@ -83,6 +89,7 @@ rpms:
   - pv
   - pwgen
   # - python3-pip  
+  - powertop
   - python3-virtualenv
   - qemu
   - simple-scan
@@ -90,13 +97,18 @@ rpms:
   - strace
   - task
   - terminator
+  - tmux
   - transmission
   - vdpauinfo
+  - vim-enhanced
   - virt-install
   - virt-manager
   - virt-viewer
   - vit
-  - xq  
+  - vorbis-tools
+  - vorbisgain
+  - xq
+  - zstd 
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
