@@ -38,6 +38,8 @@ rpms:
   - emacs
   - et
   - dmenu
+  - ddccontrol
+  - ddccontrol-gtk
   - figlet
   - fish
   - foliate
@@ -63,6 +65,7 @@ rpms:
   - hdparm
   - htop
   - iotop-c
+  - input-remapper
   - iperf3
   - jq
   - libreoffice
@@ -107,6 +110,7 @@ rpms:
   - vit
   - vorbis-tools
   - vorbisgain
+  - wireguard-tools
   - xq
   - zstd 
 
