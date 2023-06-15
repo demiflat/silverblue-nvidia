@@ -1,4 +1,4 @@
-name: build-ublue
+name: build-os
 on:
   pull_request:
     branches:
@@ -39,7 +39,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Add yq for reading recipe.yml
-        uses: mikefarah/yq@v4.33.3
+        uses: mikefarah/yq@v4.34.1
 
       - name: Gather image data from recipe
         run: |
@@ -99,7 +99,7 @@ jobs:
             org.opencontainers.image.title=${{ env.IMAGE_NAME }}
             org.opencontainers.image.version=${{ steps.labels.outputs.VERSION }}
             org.opencontainers.image.description=${{ env.IMAGE_DESCRIPTION }}
-            io.artifacthub.package.readme-url=https://raw.githubusercontent.com/ublue-os/startingpoint/main/README.md
+            io.artifacthub.package.readme-url=https://raw.githubusercontent.com/ublue-os/demiflat/main/README.md
             io.artifacthub.package.logo-url=https://avatars.githubusercontent.com/u/120078124?s=200&v=4
 
       # Build image using Buildah action
@@ -145,7 +145,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       # Sign container
-      - uses: sigstore/cosign-installer@v3.0.3
+      - uses: sigstore/cosign-installer@v3.0.5
         if: github.event_name != 'pull_request'
 
       - name: Sign container image
