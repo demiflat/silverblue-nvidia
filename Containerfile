@@ -2,7 +2,7 @@ ARG FEDORA_MAJOR_VERSION=38
 ARG BASE_IMAGE_URL=ghcr.io/ublue-os/silverblue-nvidia
 
 FROM ${BASE_IMAGE_URL}:${FEDORA_MAJOR_VERSION}
-ARG RECIPE
+ARG RECIPE=recipe.yml
 
 # copy over configuration files
 # etc is copied to /usr/etc/ to prevent "merge conflicts"

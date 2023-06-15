@@ -44,7 +44,7 @@ rpms:
   - gh
   - gitk
   - gnumeric
-  - gstreamer1-plugin-openh264
+  # - gstreamer1-plugin-openh264
   - gstreamer1-plugins-base-tools
   - gstreamer1-plugins-entrans
   - gstreamer1-plugins-fc
@@ -72,9 +72,9 @@ rpms:
   - mozilla-openh264
   - mpv
   - neovim
-  - net-tools
+  # - net-tools
   - nmap
-  - openh264
+  # - openh264
   - p7zip
   - pass
   - pip
@@ -82,7 +82,7 @@ rpms:
   - progress
   - pv
   - pwgen
-  - python3-pip  
+  # - python3-pip  
   - python3-virtualenv
   - qemu
   - simple-scan

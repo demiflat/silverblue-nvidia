@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo tee -a /etc/yum.repos.d/vscodium.repo << 'EOF'
-[gitlab.com_paulcarroty_vscodium_repo]
+[vscodium]
 name=gitlab.com_paulcarroty_vscodium_repo
 baseurl=https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/rpms/
 enabled=1
