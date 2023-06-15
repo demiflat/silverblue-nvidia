@@ -33,9 +33,12 @@ extrarepos:
 # These rpms will be installed from the fedora repository
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
+  - alacritty
   - aria2
   - chromium
   - clang
+  - clipman
+  - debootstrap
   - emacs
   - et
   - dmenu
@@ -76,15 +79,20 @@ rpms:
   - libvdpau-va-gl  
   - libvirt-client
   - libvirt-daemon-kvm
+  - light
+  - links
   - lolcat
   - lsd
   - lua
   - luajit
+  - make
+  - mako
+  - mkosi
   - minicom
   - mozilla-openh264
   - mpv
   - neovim
-  # - net-tools
+  - net-tools
   - nmap
   - p7zip
   - pass
@@ -93,20 +101,23 @@ rpms:
   - plotnetcfg
   - powertop
   - progress
+  - pulseaudio-utils
   - pv
   - pwgen
-  # - python3-pip  
+  - python3-pip  
   - powertop
   - python3-virtualenv
   - qemu
   - simple-scan
   - sox
   - strace
+  - sway
   - task
   - terminator
   - tlp
   - tmux
   - transmission
+  - tumbler
   - vdpauinfo
   - vim-enhanced
   - virt-install
@@ -116,8 +127,14 @@ rpms:
   - vorbis-tools
   - vorbisgain
   - wireguard-tools
+  - w3m
+  - waybar
+  - wdisplays
+  - wlsunset
+  - wofi
+  - wshowkeys
   - xq
-  - zstd 
+  - zstd
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
