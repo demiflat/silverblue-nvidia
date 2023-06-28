@@ -38,6 +38,10 @@ rpms:
   - aria2
   - chromium
   - clang
+  - clang-devel
+  - clang-resource-filesystem
+  - clang-tools-extra
+  - clang-tools-extra-devel
   - clipman
   - debootstrap
   - emacs
@@ -47,6 +51,7 @@ rpms:
   - ddccontrol
   - ddccontrol-gtk
   - ffmpeg
+  - fido2-tools
   - figlet
   - fish
   - foliate
@@ -55,6 +60,7 @@ rpms:
   - gedit
   - gh
   - gitk
+  - git-delta
   - gnumeric
   - golang
   - grub-customizer
@@ -77,6 +83,7 @@ rpms:
   - input-remapper
   - iperf3
   - jq
+  - libstdc++-static
   - libreoffice
   - librewolf
   - libva-intel-hybrid-driver
@@ -86,6 +93,7 @@ rpms:
   - libvirt-daemon-kvm
   - light
   - links
+  - lld
   - lolcat
   - lsd
   - lua
@@ -94,7 +102,6 @@ rpms:
   - mako
   - mkosi
   - minicom
-  # - mozilla-openh264
   - mpv
   - neovim
   - net-tools
@@ -128,6 +135,7 @@ rpms:
   - tmux
   - transmission
   - tumbler
+  - unzip
   - vdpauinfo
   - vim-enhanced
   - virt-install
@@ -148,7 +156,29 @@ rpms:
   - wofi
   - wshowkeys
   - xq
+  - zip
   - zstd
+# qmk  
+  - diffutils
+  - gcc
+  - glibc-headers
+  - kernel-devel
+  - kernel-headers
+  - avr-binutils
+  - avr-gcc
+  - avr-gcc-c++
+  - avr-libc
+  - arm-none-eabi-binutils-cs
+  - arm-none-eabi-gcc-cs
+  - arm-none-eabi-gcc-cs-c++
+  - arm-none-eabi-newlib
+  - avrdude
+  - dfu-programmer
+  - dfu-util
+  - hidapi
+  - hidapi-devel
+  - libusb1-devel
+  - libusb-compat-0.1-devel
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
