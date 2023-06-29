@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/delete-package-versions@v4
         with: 
-          package-name: 'sway'
+          package-name: 'silverblue'
           package-type: 'container'
           min-versions-to-keep: 3
 
