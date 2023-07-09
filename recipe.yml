@@ -130,8 +130,8 @@ rpms:
   - sway
   - task
   - terminator
-  - tlp
-  - tlp-rdw
+  # - tlp
+  # - tlp-rdw
   - tmux
   - transmission
   - tumbler
