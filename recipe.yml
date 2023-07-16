@@ -96,6 +96,7 @@ rpms:
   # - lld
   - lolcat
   - lsd
+  - ltunify
   - lua
   - luajit
   - make
