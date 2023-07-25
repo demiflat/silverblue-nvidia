@@ -34,7 +34,7 @@ extrarepos:
 # These rpms will be installed from the fedora repository
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
-  - alacritty
+  # - alacritty
   - aria2
   - chromium
   # - clang
@@ -42,9 +42,9 @@ rpms:
   # - clang-resource-filesystem
   # - clang-tools-extra
   # - clang-tools-extra-devel
-  - clipman
+  # - clipman
   - cmake
-  - debootstrap
+  # - debootstrap
   - emacs
   - et
   - diffuse
@@ -145,17 +145,17 @@ rpms:
   - vit
   # - vorbis-tools
   # - vorbisgain
-  - vlc
-  - vlc-extras
+  # - vlc
+  # - vlc-extras
   - wireguard-tools
   - w3m
-  - waybar
+  # - waybar
   # - waydroid
   # - waydroid-selinux
-  - wdisplays
-  - wlsunset
-  - wofi
-  - wshowkeys
+  # - wdisplays
+  # - wlsunset
+  # - wofi
+  # - wshowkeys
   - xq
   - zip
   - zstd
