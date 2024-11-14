@@ -39,22 +39,14 @@ jobs:
           - recipe.yml
 
     steps:
-      # - name: Maximize build space
-      #   uses: easimon/maximize-build-space@master
-      #   with:
-      #     root-reserve-mb: 512
-      #     swap-size-mb: 1024
-      #     remove-android: 'true'
-      #     remove-codeql: 'true'
-      #     # remove-docker-images: 'true'
-      #     remove-dotnet: 'true'
-      #     remove-haskell: 'true'
-              
-      #      - uses: actions/delete-package-versions@v5
-      #  with: 
-      #    package-name: 'silverblue-nvidia'
-      #    package-type: 'container'
-      #    min-versions-to-keep: 2
+      - uses: actions/delete-package-versions@v5
+        with: 
+          package-name: 'silverblue-nvidia'
+          package-type: 'container'
+          min-versions-to-keep: 2
+
+      - name: Maximize build space
+        uses: ublue-os/remove-unwanted-software@v7
 
       # Checkout push-to-registry action GitHub repository
       - name: Checkout Push to Registry action
