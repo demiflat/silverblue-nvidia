@@ -50,11 +50,11 @@ jobs:
       #     remove-dotnet: 'true'
       #     remove-haskell: 'true'
               
-      - uses: actions/delete-package-versions@v5
-        with: 
-          package-name: 'silverblue'
-          package-type: 'container'
-          min-versions-to-keep: 2
+      #      - uses: actions/delete-package-versions@v5
+      #  with: 
+      #    package-name: 'silverblue-nvidia'
+      #    package-type: 'container'
+      #    min-versions-to-keep: 2
 
       # Checkout push-to-registry action GitHub repository
       - name: Checkout Push to Registry action
