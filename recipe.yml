@@ -39,9 +39,9 @@ rpms:
   # - clang-tools-extra
   # - clang-tools-extra-devel
   # - clipman
-  - cmake
+  # - cmake
   # - debootstrap
-  - emacs
+  # - emacs
   - et
   - diffuse
   - dmenu
@@ -57,7 +57,7 @@ rpms:
   - gh
   - gitk
   - git-delta
-  - gnumeric
+  # - gnumeric
   - golang
   - grub-customizer
   - gstreamer1-plugin-libav
@@ -67,9 +67,9 @@ rpms:
   - gstreamer1-plugins-good-extras
   - gstreamer1-plugins-good-gtk
   - gstreamer1-plugins-ugly
-  - gstreamer1-rtsp-server
-  - gstreamer1-svt-av1
-  - gstreamer1-svt-vp9
+  # - gstreamer1-rtsp-server
+  # - gstreamer1-svt-av1
+  # - gstreamer1-svt-vp9
   - gstreamer1-vaapi
   - gron
   - helvum
