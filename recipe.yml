@@ -17,16 +17,19 @@ description: desktop os as i like it
 # Place scripts in scripts/ and put the corresponding filename here
 scripts:
   #  - librewolf.sh
-  - ghostty.sh
-  - mullvad.sh
-  - wezterm.sh
-  - vscodium.sh
-  - vscodium-install.sh # install here because we need to patch
-  - vscodium-patch.sh
+  #  - ghostty.sh
+  #  - mullvad.sh
+  #  - wezterm.sh
+  #  - vscodium.sh
+  #  - vscodium-install.sh # install here because we need to patch
+  #  - vscodium-patch.sh
 # a list of urls of .repo files that should be added to your system
 # this is the proper way to add copr repos to your image
 extrarepos:
-  - https://rpm.librewolf.net/librewolf-repo.repo
+  - https://copr.fedorainfracloud.org/coprs/pgdev/ghostty/repo/fedora-41/pgdev-ghostty-fedora-41.repo 
+  - https://copr.fedorainfracloud.org/coprs/wezfurlong/wezterm-nightly/repo/fedora-41/wezfurlong-wezterm-nightly-fedora-41.repo
+  - https://repository.mullvad.net/rpm/stable/mullvad.repo
+  #  - https://rpm.librewolf.net/librewolf-repo.repo
 # These rpms will be installed from the fedora repository
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
@@ -54,6 +57,7 @@ rpms:
   - ffmpeg
   - fido2-tools
   - figlet
+  - firefox
   - fish
   - foliate
   - fortune-mod
@@ -62,7 +66,7 @@ rpms:
   - gh
   - gitk
   - git-delta
-  # - gnumeric
+  - gnumeric
   - golang
   - grub-customizer
   - gstreamer1-plugin-libav
@@ -72,9 +76,9 @@ rpms:
   - gstreamer1-plugins-good-extras
   - gstreamer1-plugins-good-gtk
   - gstreamer1-plugins-ugly
-  # - gstreamer1-rtsp-server
-  # - gstreamer1-svt-av1
-  # - gstreamer1-svt-vp9
+  - gstreamer1-rtsp-server
+  - gstreamer1-svt-av1
+  - gstreamer1-svt-vp9
   - gstreamer1-vaapi
   - gron
   - helvum
@@ -146,8 +150,8 @@ rpms:
   - vit
   # - vorbis-tools
   # - vorbisgain
-  # - vlc
-  # - vlc-extras
+  - vlc
+  - vlc-extras
   - wireguard-tools
   - w3m
   - waybar
