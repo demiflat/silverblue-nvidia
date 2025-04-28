@@ -46,7 +46,7 @@ jobs:
           min-versions-to-keep: 2
 
       - name: Maximize build space
-        uses: ublue-os/remove-unwanted-software@v8
+        uses: ublue-os/remove-unwanted-software@v9
 
       # Checkout push-to-registry action GitHub repository
       - name: Checkout Push to Registry action
